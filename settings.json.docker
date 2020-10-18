@@ -402,17 +402,10 @@
    */
 
   "users": {
-    "admin": {
+    "charles": {
       // 1) "password" can be replaced with "hash" if you install ep_hash_auth
       // 2) please note that if password is null, the user will not be created
-      "password": "${ADMIN_PASSWORD}",
       "is_admin": true
-    },
-    "user": {
-      // 1) "password" can be replaced with "hash" if you install ep_hash_auth
-      // 2) please note that if password is null, the user will not be created
-      "password": "${USER_PASSWORD}",
-      "is_admin": false
     }
   },
 
@@ -551,5 +544,13 @@
       */
 
       ]
-    } // logconfig
+    }, // logconfig
+    {
+	"ep_hash_auth": {
+	    "hash_typ": "sha_512",
+	    "hash_dig": "hex",
+	    "hash_dir": "/var/opt/app/users",
+	    "hash_ext": "/.hash",
+	    "hash_adm": false
+    }
 }
