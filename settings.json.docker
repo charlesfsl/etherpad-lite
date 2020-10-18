@@ -544,14 +544,13 @@
       */
 
       ]
-    }, // logconfig
-    {
-	"ep_hash_auth": {
-	    "hash_typ": "sha_512",
-	    "hash_dig": "hex",
-	    "hash_dir": "/var/opt/app/users",
-	    "hash_ext": "/.hash",
-	    "hash_adm": false
-	}
+    },
+    // logconfig
+    "ep_hash_auth": {
+      "hash_typ": "sha_512",
+      "hash_dig": "hex",
+      "hash_dir": "/var/opt/app/users",
+      "hash_ext": "/.hash",
+      "hash_adm": false
     }
 }
