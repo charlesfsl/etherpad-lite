@@ -552,5 +552,6 @@
 	    "hash_dir": "/var/opt/app/users",
 	    "hash_ext": "/.hash",
 	    "hash_adm": false
+	}
     }
 }
